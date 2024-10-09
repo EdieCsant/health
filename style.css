@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    background-color: #dcdcdc;
+}
+
+/* Cabeçalho*/
+header{
+    margin: 20px 0px 25px 0px ;
+}
+
+header h1{
+    font-size: 2em;
+    color: #cc470d;
+}
+
+.logo {
+    font-size: 4em;
+    color: #cc470d;
+    font-family: fantasy;
+}
+
+.test{
+    font-size: 1.2em;
+    color: #818181;
+    font-family: fantasy;
+    margin-top: -15px;
+}
+
+/*caixas de imput number*/
+input[type=number]{
+   
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cc470d;
+    font-size: 1em;
+    width: 100%;
+}
+
+.boxfrm {
+    display: grid;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    margin: -5px 30px 0px 20px;
+    /*border: 1px solid #fff;*/
+    border-radius: 20px;
+    padding: 5px 0px 5px 5px;
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+/*Radio Buttons*/
+.Radio {
+    margin: 25px 0px;
+    font-size: 25px;
+}
+
+#f{
+    margin-left: 25px;
+}
+
+/*lista (combo box)*/
+#atividade{
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #cc470d;
+    border-radius: 5px;
+}
+
+/*Botões*/
+input[type=button], input[type=reset]{
+    padding: 10px 25px;
+    border-radius: 35px;
+    border: none;
+    background-color: #cc470d;
+    color: aliceblue;
+    font-size: 1.8em;
+    
+}
+
+input[type=reset]{
+    margin-left: 20px;
+}
+
+/*Linhas*/
+hr{
+    margin: 25px 0px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100px;
+}
+
+/*Mostrador de coreção pulsando*/
+/*Mostrador*/
+
+/*Coração Pulsando*/
+.coracao{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transform: rotate(-135deg);
+    z-index: -1;
+    margin: 30px;
+    animation: pulsar 0.7s infinite alternate; /*Executar a função*/
+}
+.quadrado{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: #ff0000;
+}
+.circulo{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 50px;
+}
+.top{
+    top: 50%;
+}
+.left{
+    left: 50%;
+}
+
+.freq {
+    position: absolute;
+    font-family: system-ui;
+}
+.imcbox{
+    border-radius: 30px;
+}
+.corabox {
+    border-radius: 30px;
+    border: 1px solid;
+
+}
+.freq h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 60px 0px 0px 50px;
+}
+
+/*Função para ampliar e reduzir o coração*/
+@keyframes pulsar {
+    0%{
+        transform: scale(0.95) rotate(-135deg);
+    }
+    100%{
+        transform: scale(1.15) rotate(-135deg);
+    }
+}
+
+/*Calorias e água*/
+#calorias, #agua{
+    font-size: 1.3em;
+}
+
+#calorias, #calo{
+    color:#292929;
+    font-size:1.2em;
+}
+
+#agua, #lit{
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#imc, #status{
+    font-size: 1.5em;
+}
+
+footer{
+    height: 30px;
+}
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -28px;
+}
